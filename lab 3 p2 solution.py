@@ -11,9 +11,10 @@ are from their starting position, both in "Manhattan Distance", and shortest
 path / straight line distance (Euclidean distance).
 """
 # =============================================================================
-# Note to students: This is heavily over-commented code, with the intention
-# of explaining different aspects of the program. Please do not take this as 
-# an example of what your comments should look like.
+# Note to students: This is heavily over-commented and over-expanded code, 
+# with the intention of explaining different aspects of the program. Please do 
+# not take this as an example of what your comments or parenthese spacing
+# should look like.
 #
 #
 # In order to track the person's movements and location, we imagine that the 
@@ -53,66 +54,71 @@ path / straight line distance (Euclidean distance).
 #    where (x1,y1) are the starting coordinates, and (x2,y2) are 
 #    the coordinates of our person's current location.
 # =============================================================================
-
 import random
 import math
 
+#by convention, ALL_CAPS variable names signal that the variable's values 
+#should never be modified. However, Python does not enforce this and you
+#could modify them if you wanted, it would just be bad practice. 
+#
+#Here we use them to make the code more understandable, e.g. by being able to 
+#reference a direction as NORTH instead of 0.
 
 X = 0 
 Y = 1
-ORIGIN = [0,0] #representing (x,y) coordinates (0,0) as a list of two ints
 NORTH = 0 
 EAST = 1
 SOUTH = 2
 WEST = 3
 
 random.seed() #re-seed our pseudo-random number generator (PRG) on start
-starting_loc_coords = [0,0]
-loc_coords = ORIGIN #initialize our starting coordinates to (0,0)
+
+#representing (x,y) coordinates as a list of two integers
+starting_loc = [0,0] #save our starting location (used at end of program)
+current_loc = [0,0] #we will use this variable seperately to track our current
+                    #location, also starting from (0,0)
 
 #each for-loop will make one move at random. We will make 100 moves in total.
 for i in range(100):
     
-    
-    #both lines generate a random integer between 0 and 3
-    direction = int((random.random() * 4))
-    #directions = random.randrange(4) 
+    #random.random() generates a number between 0 and .9999...
+    #multiplying it by 4 gives us a number from 0 to 3.999... 
+    #converting it to an int rounds it down, so we get a number from 0-3
+    direction = int( (random.random()*4) )
 
     #check which direction we need to go:
-    
     if direction == NORTH: 
         #add 1 to the current x coordinate, and save it as the new x coordinate
-        loc_coords[1] = loc_coords[X] + 1 
+        current_loc[1] = current_loc[X] + 1 
         
     elif direction == EAST:
         #add 1 to the current y coordinate, and save it as the new y coordinate
-        loc_coords[Y] = loc_coords[Y] + 1
+        current_loc[Y] = current_loc[Y] + 1
         
     elif direction == SOUTH:
         #subtract 1 from the current y coordinate, and save it as the new y coordinate
-        loc_coords[Y] = loc_coords[Y] - 1
+        current_loc[Y] = current_loc[Y] - 1
     
     elif direction == WEST:
         #subtract 1 from the current x coordinate, and save it as the new x coordinate
-        loc_coords[X] = loc_coords[X] - 1
+        current_loc[X] = current_loc[X] - 1
         
-#calculate distance from origin
-x1 = ORIGIN[X]
-y1 = ORIGIN[Y]        
+#calculate total distance moved:
+x1 = starting_loc[X]
+y1 = starting_loc[Y]        
         
-x2 = loc_coords[X]
-y2 = loc_coords[Y]
+x2 = current_loc[X]
+y2 = current_loc[Y]
 
-print(  ORIGIN)
-
+#abs() is a built in function that returns that absolute value of a number.
 change_in_x = abs(x1-x2)
 change_in_y = abs(y1-y2)
 
 manhattan_dist = change_in_x + change_in_y
-
 eucldn_dist = math.sqrt((change_in_x**2) + (change_in_y**2))
 
 print("Manhattan distance is: ", manhattan_dist)
-print( round(eucldn_dist, 4))
+print("Euclidean distance is: ", round(eucldn_dist, 4))
+#round(n, i) is a function that rounds a number, n, to i decimal places. 
 
 
