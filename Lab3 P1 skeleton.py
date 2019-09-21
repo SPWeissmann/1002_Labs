@@ -23,7 +23,7 @@ import random
 sum1 = 0 #initialize our first sum value as zero
 
 for i in range(101):
-    sum = sum + i #add i to our sum each time the foor loop runs
+    sum1 = sum1 + i #add i to our sum each time the foor loop runs
     
 print("sum of integers from 1-100 (inclusive) is: " + str(sum1))
 
@@ -52,12 +52,21 @@ print("sum of all even integers from 1-100 (inclusive) is: " + str(sum2))
 
 # =============================================================================
 # part 3:
-# sum of 100 random numbers from 1-10 (inclusive)
+# Goal: sum of 100 random numbers from 1-10 (inclusive)
+#
+# We use a for loop like in part 1, except this time we only want to run 100
+# times. To do so, we generate a range from 0-99 (inclusive).
+# Inside the for loop, we generate a random integer from 1-10 (inclusive) 
+# by using the randrange() function. We then add our randomly generated number 
+# to our sum and print the result when done. 
+#
+# We use a \ in our print statement to continue it onto a new line. 
 # =============================================================================
 sum3 = 0
 
 for i in range(100):
-    rand_num = random.randrange(1,10)
+    rand_num = random.randrange(1,11)
     sum3 = sum3 + rand_num
     
-print("sum of all even integers from 1-100 (inclusive) is: " + str(sum3))
+print("The sum of 100 randomly generated ints between 1 and 10" \
+      "(inclusive) is: " + str(sum3))
