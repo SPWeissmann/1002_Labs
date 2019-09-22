@@ -103,7 +103,7 @@ for i in range(100):
         #subtract 1 from the current x coordinate, and save it as the new x coordinate
         current_loc[X] = current_loc[X] - 1
         
-#calculate total distance moved:
+#calculate total distance moved
 x1 = starting_loc[X]
 y1 = starting_loc[Y]        
         

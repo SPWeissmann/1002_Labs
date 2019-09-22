@@ -6,7 +6,6 @@ Created on Thu Sep 19 10:10:26 2019
 """
 import random
 
-
 # =============================================================================
 # Part 1
 # Goal: sum of all numbers from 1-100 (inclusive)
