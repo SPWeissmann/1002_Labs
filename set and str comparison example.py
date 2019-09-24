@@ -15,3 +15,8 @@ set2 = set(str2)
 print(set1)
 print(set2)
 
+
+if set1 == set2:
+    print("set1 and set2 are equal")
+else:
+    print("set1 and set2 are not equal")
