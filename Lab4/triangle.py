@@ -7,11 +7,9 @@ Created on Fri Sep 27 22:37:51 2019
 """
 
 def area(base, height):
-    
-    pass
+    return (base * height) / 2
 
 
 def perimeter(side1, side2, side3):
-    
-    
-    pass
+    return (side1 + side2 + side3)
+
