@@ -34,29 +34,46 @@ def main():
         elif choice == 3:
             width = float(input("Enter the rectangle's width: "))
             length = float(input("Enter the rectangle's length: "))
-            print('The area is {:.3f}'.format(rectangle.area(width, length)))
+            print("The area is {:.3f}".format(rectangle.area(width, length)))
         elif choice == 4:
             width = float(input("Enter the rectangle's width: "))
             length = float(input("Enter the rectangle's length: "))
             print('The perimeter is {:.3f}'.\
                     format(rectangle.perimeter(width, length)))
         elif choice == 5:
-            pass
-        
+            base = float(input("Enter triangle's base length: "))
+            height = float(input("Enter the triangle's height: "))
+            print("The area is: {:.3f}".format(triangle.area(height,base)))
+            
         elif choice == 6:
-            pass
+            side_a = float(input("Enter the length of the side a: "))
+            side_b = float(input("Enter the length of the side b: "))
+            side_c = float(input("Enter the length of the side c: "))
+            print("The perimeter of the triangle is: {:.3f}".\
+                  format(triangle.perimeter(side_a, side_b, side_c)))
         
         elif choice == 7: 
-            pass
+            radius = float(input("Enter the sphere's radius: "))
+            print("The surface area of the sphere is: {:.3f}".\
+                  format(sphere.surface(radius)))
         
         elif choice == 8:
-            pass
+            height = float(input("Enter the sphere's height: "))
+            radius = float(input("Enter the sphere's radius: "))
+            print("The volume of the sphere is: {:.3f}".\
+                  format(sphere.volume(height,radius)))
         
         elif choice == 9:
-            pass
+            height = float(input("Enter the cylinder's height: "))
+            radius = float(input("Enter the cylinder's radius: "))
+            print("The surface area of the cylinder is: {:.f}".\
+                  format(cylinder.surface(height, radius)))
         
         elif choice == 10:
-            pass
+            height = float(input("Enter the cylinder's height: "))
+            radius = float(input("Enter the cylinder's radius: "))
+            print("The volume of the cylinder is: {:.f}".\
+                  format(cylinder.volume(height, radius)))
             
         elif choice == 0:
             print("Exiting the program...")
