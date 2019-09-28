@@ -66,7 +66,7 @@ def main():
         elif choice == 9:
             height = float(input("Enter the cylinder's height: "))
             radius = float(input("Enter the cylinder's radius: "))
-            print("The surface area of the cylinder is: {:.f}".\
+            print("The surface area of the cylinder is: {:.f}".\t
                   format(cylinder.surface(height, radius)))
         
         elif choice == 10:
