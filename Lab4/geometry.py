@@ -1,7 +1,12 @@
+"""
+Majority of code provided by Professor Adam Cannon for class COMS W1002 
+"Computing in Context". Code expanded to handle triangles, spheres, and 
+cylinders by Samuel Weissmann
+"""
+
 # This program allows the user to choose various
 # geometry calculations from a menu. This program
 # imports the circle and rectangle modules.
-
 import circle
 import rectangle
 import triangle
@@ -66,13 +71,13 @@ def main():
         elif choice == 9:
             height = float(input("Enter the cylinder's height: "))
             radius = float(input("Enter the cylinder's radius: "))
-            print("The surface area of the cylinder is: {:.f}".\t
+            print("The surface area of the cylinder is: {:.3f}".\
                   format(cylinder.surface(height, radius)))
         
         elif choice == 10:
             height = float(input("Enter the cylinder's height: "))
             radius = float(input("Enter the cylinder's radius: "))
-            print("The volume of the cylinder is: {:.f}".\
+            print("The volume of the cylinder is: {:.3f}".\
                   format(cylinder.volume(height, radius)))
             
         elif choice == 0:
@@ -83,15 +88,15 @@ def main():
 # The display_menu function displays a menu.
 def display_menu():
     print("        MENU for ")
-    print("1) Area of a circle")
-    print("2) Circumference of a circle")
-    print("3) Area of a rectangle")
-    print("4) Perimeter of a rectangle")
-    print("5) Area of a triangle")
-    print("6) Perimeter of a triangle")
-    print("7) Surface area of a sphere")
-    print("8) Volume of a sphere")
-    print("9) Surface area of a cylinder")
+    print("1)  Area of a circle")
+    print("2)  Circumference of a circle")
+    print("3)  Area of a rectangle")
+    print("4)  Perimeter of a rectangle")
+    print("5)  Area of a triangle")
+    print("6)  Perimeter of a triangle")
+    print("7)  Surface area of a sphere")
+    print("8)  Volume of a sphere")
+    print("9)  Surface area of a cylinder")
     print("10) Volume of a cylinder")
     print("0) Quit")
 
