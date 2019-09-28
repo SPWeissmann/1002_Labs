@@ -1,0 +1,56 @@
+Other points of discussion:
+================================================================================
+A general roundup of other points discussed during lab today. Please feel free
+to ask any questions we left out of didn't get to on Piazza 
+
+
+1. Scope basics: To pass values or information into our functions we use 
+   arguments (the values passed in the () after the function name). To send a 
+   new value back to the user, we use the return statement. 
+
+2. importing: "import abc as a" means to import abc and all of the functions 
+   defined in the file abc.py to our program. We can refer to the module "abc" 
+   as "a" and access it's associated functions with a.function_name().
+
+3. Calling functions, parameters, arguments: When we a define a function in 
+   Python the name we give to the variable(s) in the () after the function's 
+   name are the "parameters". When we call the function in our program, 
+   the data that we use for that function call is called the "arguments". E.g.
+
+    	def squareAdd(a, b):
+    	'''
+    	A function that takes in two numbers. It squares the first, adds the 
+    	second to the sum, and returns the total
+    	''' 
+            return a**2 + b
+
+
+
+    	square_int = 10
+   	add_int = 5
+    	result = squareInt(square_int, add_int)
+    	print(result)
+
+    	>>105
+
+   Here, a and b are the function's parameters. square_int and add_int, or more
+   precisely the values 10 and 5, are the function's arguments.
+
+   It is important to understand that the parameter names and function names do
+   not need to be the same. All that matters is that you list them in the same 
+   order in both places. For example, calling squareInt(add_int, square_int) 
+   would produce the wrong result.
+
+4. Return vs. Print: A print() statement will simply print whatever is specified
+   the user's screen. Return will return a value from a function to where ever
+   that function was called in your code. It does not print out to the screen, 
+   although some development environments will print out return values anyways.
+   Just know that return values being printed to your screen is *not* guaranteed 
+   behavior.
+
+5. Line length, multi-line statements: It is considered best practice for code
+   to be less than 80 characters per line. If your line would be "too long", you 
+   can use an \ character to carry it on the next line. Examples of this are on
+   lines 32, 41, 52, and more.
+
+
