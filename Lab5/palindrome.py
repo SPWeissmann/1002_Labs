@@ -5,12 +5,4 @@ spw2136
 '''
 
 def isPalindrome(str1):
-
-
-
-
-
-
-
-
-
+    return str1 == str1[::-1]
