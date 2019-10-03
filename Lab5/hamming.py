@@ -26,7 +26,7 @@ def hammingDistance(str1, str2):
     return difference
 
 
-def hammingDistance2(str1, str2)
+def hammingDistance2(str1, str2):
     '''Can define the hamming distance between two strings of unequal length'''
 
     #identify shorter string
