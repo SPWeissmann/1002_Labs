@@ -4,10 +4,15 @@ spw2136
 2019-10-02
 Combines required functions into one file, instead of splitting them up
 
-hammingDistance: Find the Hamming distance between two strings, which is defined as
-the nunmber of character substitutions required to make the two strings equal.
+hammingDistance: Find the Hamming distance between two strings, which is
+defined as the number of character substitutions required to make the
+two strings equal.
+
+hammingDistance2: Finds the hamming distance between two string of any length/
 
 isPalindrome: Tests if a string is a palindrome
+
+
 '''
 
 
