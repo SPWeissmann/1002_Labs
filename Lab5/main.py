@@ -21,7 +21,7 @@ def main():
         if choice == "p":
             input_str = input("Please type the string that you would "
                               "like to check: ")
-            if l.isPalindrome(input_str):
+            if l.is_palindrome(input_str):
                 print(input_str," is a palindrome")
             else:
                 print(input_str,"is not a palindrome")
@@ -31,7 +31,7 @@ def main():
             input_str2 = input("Please enter the second git sstring: ")
             #check inputs
             if len(input_str1) == len(input_str2):
-                hamming_dist = l.hammingDistance(input_str1, input_str2)
+                hamming_dist = l.hamming_distance(input_str1, input_str2)
                 print("The hamming distance between",input_str1,"and",
                       input_str2,"is",hamming_dist)
             else:
@@ -40,7 +40,7 @@ def main():
         # if choice == "h2":
         #     input_str1 = input("Please enter the first string: ")
         #     input_str2 = input("Please enter the second string: ")
-        #     hamming_dist = l.hammingDistance2(input_str1, input_str2)
+        #     hamming_dist = l.hamming_distance2(input_str1, input_str2)
         #     print("The hamming distance between",input_str1," and ",\
         #           input_str2," is ",hamming_dist)
 
