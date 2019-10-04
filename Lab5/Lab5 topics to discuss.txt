@@ -1,0 +1,28 @@
+Topics to discuss
+
+================================================================================
+
+1. Function code is indented under function header/definition. On File 
+   execution, the code there will not run on its own. It is simply available to 
+   be called. Only code at the zero indentation level will be run. Not definitions. 
+
+2. The basic concept of how calling a function works. i.e. how calling it will 
+   tell python to go look for a function by that name in the namespace, and if 
+   found it will execute the code indented under that function definition. 
+
+	a. The only way to send data in and out of a function is through args
+  	   and return. The program cannot "look into" a function, and once the 
+	   function has returned everything inside it will go out of scope and 
+	   be deleted anyways. Also, having a function alter stuff outside of 
+ 	   its scope (e.g. global vars) is bad practice.
+
+3. Purpose of main function, need to call main from outside of function to run
+
+
+4. Motivation for using a main function, and splitting up different parts
+   of program into smaller functions and calling them 
+
+
+5. Purpose of if __name__== "__main__":
+	a. Very brief overview. Only really need to tell them that it stops code
+	   from running if it's not the main file being run

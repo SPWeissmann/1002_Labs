@@ -30,8 +30,9 @@ def main():
     pass
     #end of main function
 
-#call main function if/when file is run
-main()
+#What do we need to add here in order to make file run when executed?
 
 
 #end of file
+
+
