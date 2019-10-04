@@ -47,9 +47,8 @@ def main():
         else:
             print("Goodbye!")
             break
-main()
-
-    #discussioning main method for vietnam
-    # talk about how variable names don't need to match
-    # Discuss scope with students
-    # Discuss functions and functions usage within codes.
+        
+#ensures that code will only run if this is the "main" file being executed
+if __name__== "__main__":
+    main()
+    
