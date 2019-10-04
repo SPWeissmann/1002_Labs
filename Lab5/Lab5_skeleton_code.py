@@ -6,7 +6,7 @@ spw2136
 Skeleton code for the lab 5 file, to fill in during the lab.
 '''
 
-def isPalindrome():
+def is_palindrome():
     '''Takes in a string, tests if it is a palindrome, and returns
     True or False'''
     #code goes here
@@ -49,6 +49,8 @@ def main():
     hamming_distance(input1, input2)
     
     #end of main function
+
+
 
 #What do we need to add here in order to make file run when executed?
 
