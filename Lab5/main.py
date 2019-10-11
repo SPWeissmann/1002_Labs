@@ -3,12 +3,12 @@ Samuel Weissmann
 spw2136
 2019-10-02
 
-Main function, just used for testing whatever we come up with for palindromes
-and hamming functions
+Adds some structure for testing the functions we wrote during lab.
 '''
 import lab5 as l
 
 def main():
+
     while True:
         print("\nPlease type an option from the menu, or press anything "
               "else to quit:")
