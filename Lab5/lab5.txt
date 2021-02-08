@@ -1,0 +1,15 @@
+Problem 1:
+The Hamming distance between two binary strings of equal length is the number 
+of substitutions required to make them identical. So for example:
+s1 = ‘1 0 0 1 1’
+s2 = ‘1 0 1 0 0’
+hamming_distance(s1, s2) = 3
+because the strings differ at three specific spots. Write a function in Python 
+that computes the Hamming distance between any two strings (not just binary). 
+
+Problem 2: 
+In your last assignment you wrote a program that involved palindromes. Write a
+function in Python that determines if any string of any length is a palindrome. 
+Be as efficient as you can.
+
+
