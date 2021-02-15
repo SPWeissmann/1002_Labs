@@ -1,21 +1,21 @@
 Other points of discussion:
 ================================================================================
 A general roundup of other points discussed during lab today. Please feel free
-to ask any questions we left out of didn't get to on Piazza 
+to ask any additional questions on Piazza.
 
 
 1. Scope basics: To pass values or information into our functions we use 
    arguments (the values passed in the () after the function name). To send a 
    new value back to the user, we use the return statement. 
 
-2. importing: "import abc as a" means to import abc and all of the functions 
+2. Importing: "import abc as a" means to import abc and all of the functions 
    defined in the file abc.py to our program. We can refer to the module "abc" 
-   as "a" and access it's associated functions with a.function_name().
+   as "a" and access its associated functions with a.function_name().
 
 3. Calling functions, parameters, arguments: When we a define a function in 
    Python the name we give to the variable(s) in the () after the function's 
    name are the "parameters". When we call the function in our program, 
-   the data that we use for that function call is called the "arguments". E.g.
+   the data that we use for that function call are called the "arguments". E.g.
 
     	def squareAdd(a, b):
     	'''
